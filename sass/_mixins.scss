@@ -153,6 +153,13 @@ Ex:
   }
 }
 
+/* Ex:
+.container-with-floated-children {
+  @extend clearfix;
+}
+*/
+
+
 
 /* Bouton mixin */
 $padding-btn-defaut: 10px 20px;
@@ -247,12 +254,6 @@ EX :
   vertical-align: middle;
   clear: both;
 }
-/* Ex:
-.container-with-floated-children {
-  @extend clearfix;
-}
-*/
-
 
 
 
