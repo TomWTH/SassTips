@@ -1,0 +1,122 @@
+/* =======================================================================
+/* ####################### TYPOGRAPHY SASS FILE ##########################
+======================================================================= */
+// Font-size
+$base-font-size: 14;
+$fallback-font: Helvetica, Arial, sans-serif;
+$base-line-height: $base-font-size * 1.5;
+// Typography -> Font face
+$font-list: Lato-Bold, Lato-Regular, Lato-Black, Lato-Light, Lato-Medium, Montserrat-Regular, Montserrat-Bold, Montserrat-Light;
+
+@each $font-face in $font-list{
+  @font-face {
+    font-family: "#{$font-face}";
+    src: local("#{$font-face}"),
+    url("fonts/#{$font-face}.eot");
+    src: url("fonts/#{$font-face}.eot?#iefix") format("embedded-opentype"),
+    url("fonts/#{$font-face}.woff") format("woff"),
+    url("fonts/#{$font-face}.ttf")  format("truetype"),
+    url("fonts/#{$font-face}.svg#{$font-face}") format("svg");
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+
+@mixin font($font: 'Lato-Regular', $font-size: $base-font-size, $font-color: $gris1, $style: normal) {
+	font-family:  $font , $fallback-font;
+  font-size: $font-size;
+  color: $font-color;
+  font-style:  $style;
+}
+
+/*
+Ex : 
+appel @include font(nom de la typo, size, color); le param important est le nom de typo, si on ne rentre pas la taille, c'est 14px par defaut, la couleur est gris par defaut et le style, normal par defaut.
+*/
+
+
+
+/*******************************************************/
+/* General
+/*******************************************************/
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  margin: 0;
+  line-height: 1.25em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h1, %header1{
+  @include font('Montserrat-Bold', 30px);
+  color: $gris1;
+  @include mobile{font-size:26px;}
+}
+
+h2, %header2{
+  @include font(Lato-Black, 24px, $bleuClair);
+  @include mobile{font-size:16px;}
+}
+
+%header2bis{
+  @include font('Lato-Black', 24px);
+}
+
+h3, %header3{
+  @include font('Lato-Black', 23px, $bleuClair);
+}
+
+h4, %header4{
+  @include font('Lato-Regular', 16px);
+}
+
+h5, %header5, strong{
+  @include font('Lato-Bold', 14px);
+}
+
+.texte, %header6, p{
+  @include font('Lato-Regular', 14px);
+}
+
+
+a {
+  text-decoration: none;
+
+  &:hover {
+  }
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  //border-bottom: 1px solid $base-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-line-height 0;
+}
+
+img {
+  margin: 0;
+  //max-width: 100%;
+}
+
+abbr, acronym {
+  //border-bottom: 1px dotted $base-border-color;
+  cursor: help;
+}
+
+%input-texte{
+ @include font(14px);
+ border: 1px solid $gris2;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ color: $gris1; 
+ line-height: 18px;
+ padding: 8px 15px 7px;
+}

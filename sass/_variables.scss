@@ -1,0 +1,52 @@
+/* =======================================================================
+/* ########################## VARIABLES SASS  ##########################
+======================================================================= */
+
+/***--VARIABLES COULEURS--***/
+
+
+$bleuFonce:#007783;
+$bleuClair:#00abbc;
+$bleuLight:#66cdd7;
+$bleuLight2:#1ab3c3;
+
+$rougeFonce:#91361e;
+$rougeClair:#d04d2b;
+
+$orange:#e67d02;
+$orange-typo:#d04d2b;
+
+$vert:#20bb5e;
+
+$gris1:#3d3d3d;
+$gris2:#828282;
+$gris3:#c1bfbf;
+$gris4:#f5f5f5;
+$gris5:#dfdfdf;
+$gris6:#9e9e9e;
+$gris7:#e4e3e3;
+$gris8:#f6f6f6;
+$gris-rech:#f2f2f2;
+
+// Font Colors
+$base-font-color:   $gris1;
+
+// -- errors & info --------------------
+$success-color: #5CB85C;
+$info-color: #5BC0DE;
+$warning-color: #F0AD4E;
+$danger-color: #D9534F;
+
+// -- Media Queries --------------------
+/*Mobile */
+$screen-xs: 320px;
+$screen-xs-max: 768px;
+/* Tablet + small screen */
+$screen-sm: 768px;
+$screen-sm-max: 1023px;
+/* Pc */
+$screen-md: 1024px;
+$screen-lg: 1200px;
+
+// --Variables Bootstrap modifiées
+$container : 1200px;

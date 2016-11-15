@@ -1,0 +1,34 @@
+/* =======================================================================
+/* ############# COMMON IMPORTS ##########################################
+======================================================================= */
+/* Bootstrap 3.3.6 */
+@import "bootstrap";
+@import "bootstrap/theme";
+
+/* Plugins -/-owl caroussel+colorbox */
+@import "plugins";
+
+/* My Custom css files */
+@import "_mixins";
+@import "_variables";
+@import "_typo";
+//@import "_structure"; /* Structure globale */
+//@import "_charte";
+//@import "_header"; /* Header statique */
+//@import "_megamenu"; /* Megamenu */
+//@import "_footer"; /* footer statique */
+@import "_homepage"; /* style homepage */
+@import "_cookieBar"; /* style cookieBar */
+@import "_page-masthead"; /* style masthead */
+@import "_megamenu"; /* test megamenu*/
+@import "_flipcountdown"; /* style flipcountdown */
+@import "_page-footer"; /* style footer */
+@import "_marques"; /*style page marques*/
+@import "_ficheMarque"; /*style fiche marque*/
+@import "_ficheproduit"; /*style fiche produit*/
+@import "_breadcrum";/*style breadcrum-fil d'ariane*/
+@import "_liensAnnexes";/*style CGV, mentions légales, plan du site*/
+@import "_blocProduit";/*bloc produit*/
+@import "_page-formulaires";/*...style formulaires*/
+@import "_fiche-produit";/*...style fiche produit*/
+@import "_page-popins";/*...style popin ajout panier*/
